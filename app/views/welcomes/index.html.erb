@@ -1,0 +1,11 @@
+<h1>hello there</h1>
+
+<% if cookies[:saved_lead] %>
+	Thanks for signing up!
+<% else %>
+	<%= form_for @lead do |f| %>
+		<%= f.text_field :name, placeholder: 'Name' %>
+		<%= f.email_field :email, placeholder: 'Email'  %>
+		<%= f.submit %>
+	<% end %>
+<% end %>

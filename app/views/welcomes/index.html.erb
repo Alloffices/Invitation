@@ -1,41 +1,73 @@
-<header>
-              <div class="container">
-                <br />
-                <br>
-                <h1>Nobbble</h1><br>
-                <h3>Pursue Your Passions.</h3>
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
 
-        				<div class="form-group">
-                  <% if cookies[:saved_lead] %>
-                    <h1>Thank you for joining!</h1>
-                  <% else %>
-                    <%= form_for @lead do |f| %>
+      <div class="hero">
 
-        			      <%= f.text_field :name, type: 'name',placeholder: 'Name', class: 'form-control' %><br>
-
-        			      <%= f.email_field :email, type: 'email', placeholder: 'Email', class: 'form-control'  %><br>
-
-        			      <%= f.text_field :name, type: 'name',placeholder: 'Social Link', class: 'form-control' %><br>
+            <h1>Nobbble</h1>        
+            <h3>Pursue Your Passions.</h3>
 <br />
-        			      <%= f.submit value: 'Submit', class: "btn btn-primary" %>
-        				    <% end %>
-                  <% end %>
-        				</div>
 
+                <%= form_for @lead do |f| %>
+
+                  <%= f.text_field :name, type: 'name',placeholder: 'Name', class: 'form-control' %><br>
+
+                  <%= f.email_field :email, type: 'email', placeholder: 'Email', class: 'form-control'  %><br>
+
+                  <%= f.text_field :name, type: 'name',placeholder: 'Social Link', class: 'form-control' %><br>
+
+                  <%= f.submit value: 'Submit', class: "btn btn-primary btn-lg" %>
+                <% end %>
+
+      </div>
+  
+  <!-- Overlay -->
+<div class="overlay"></div>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item slides active">
+      <div class="slide-1"></div>
+    </div>
+
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="text-center">
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<footer>
+    <div class="footer" id="footer">
+        <div class="container">
+            <!--/.row-->
+    <!--/.footer-->
+
+<!-- Social Footer, Single Coloured -->
+<!-- Include Font Awesome Stylesheet in Header -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- // -->
+<div class="container">
+<br />
+        <div class="text-center center-block">
+            <p class="txt-railway">- Social Media -</p>
+            <br />
+                <a href="https://www.facebook.com/bootsnipp"><i id="social" class="fa fa-facebook-square fa-3x"></i></a>
+                <a href="https://twitter.com/bootsnipp"><i id="social" class="fa fa-twitter-square fa-3x"></i></a>
+                <a href="https://plus.google.com/+Bootsnipp-page"><i id="social" class="fa fa-google-plus-square fa-3x"></i></a>
+                <a href="mailto:bootsnipp@gmail.com"><i id="social" class="fa fa-envelope-square fa-3x"></i></a>
+</div>
+</div>
+
+        </div>
+        <!--/.container--> 
+    </div>
+
+    
+    <div class="footer-bottom">
+        <div class="container">
+            <p> Copyright © All Offices Inc. All rights reserved. </p>
+        </div>
+    </div>
+    <!--/.footer-bottom--> 
+</footer>
             </div>
-          </div>
-
-<!--         <div class="sticky-bottom text-center wow fadeInUp">
-          <img src="assets/header1" alt="" class="img-responsive" data-start="opacity: 1; margin-bottom: 0%;" data-80p="opacity: 0; margin-bottom: -15%;">
-        </div> -->
-      </div>
-</header>
-  <!-- End intro / Video version -->
-  <!-- Start testimonials -->
-  <!-- End testimonials -->
-    <footer>
-      <div class="container">
-        <hr />
-        <p>Copyright &copy; 2015 All Offices Inc. All rights reserved.</p>
-      </div>
-    </footer>
+        </div>
+    </section>

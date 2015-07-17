@@ -1,50 +1,44 @@
-<section class="hero" data-start="background-position: 50% -70px;" data-100p="background-position: 50% 0px;">
+<header class="hero">
       <div class="section-overlay">
-        <div class="float-content">
           <div class="container">
             <div class="row">
-              <div class="col-sm-8 col-sm-offset-2 text-center">
+              <div class="container">
                 <br />
+                <br>
                 <h1 class="light wow fadeInDown">Nobbble</h1><br>
                 <h3 class="light wow fadeInDown">Pursue Your Passions.</h3>
-				<div class="form-group">
-          <% if cookies[:saved_lead] %>
-            <h1 class="light wow fadeInDown">Thank you for joining!</h1>
-          <% else %>
-            <%= form_for @lead do |f| %>
 
-			      <%= f.text_field :name, type: 'name',placeholder: 'Name', class: 'form-control' %><br>
+        				<div class="form-group">
+                  <% if cookies[:saved_lead] %>
+                    <h1 class="light wow fadeInDown">Thank you for joining!</h1>
+                  <% else %>
+                    <%= form_for @lead do |f| %>
 
-			      <%= f.email_field :email, type: 'email', placeholder: 'Email', class: 'form-control'  %><br>
+        			      <%= f.text_field :name, type: 'name',placeholder: 'Name', class: 'form-control' %><br>
 
-			      <%= f.text_field :name, type: 'name',placeholder: 'Social Link', class: 'form-control' %><br>
+        			      <%= f.email_field :email, type: 'email', placeholder: 'Email', class: 'form-control'  %><br>
 
-			      <%= f.submit value: 'Submit', class: "btn btn-primary" %>
-				    <% end %>
-          <% end %>
-				</div>
-                <br>
-                <br>
+        			      <%= f.text_field :name, type: 'name',placeholder: 'Social Link', class: 'form-control' %><br>
+<br />
+        			      <%= f.submit value: 'Submit', class: "btn btn-primary" %>
+        				    <% end %>
+                  <% end %>
+        				</div>
               </div>
             </div>
           </div>
-        </div>
+
 <!--         <div class="sticky-bottom text-center wow fadeInUp">
           <img src="assets/header1" alt="" class="img-responsive" data-start="opacity: 1; margin-bottom: 0%;" data-80p="opacity: 0; margin-bottom: -15%;">
         </div> -->
       </div>
-    </section>
+    </header>
   <!-- End intro / Video version -->
   <!-- Start testimonials -->
   <!-- End testimonials -->
     <footer>
       <div class="container">
-        <div class="divide-xs"></div>
-        <hr>
-        <div class="row text-center">
-          <div class="col-sm-12 divide-xs">
-            <p><small>Copyright &copy; 2015 All Offices Inc. All rights reserved.</small></p>
-          </div>
-        </div>
+        <hr />
+        <p>Copyright &copy; 2015 All Offices Inc. All rights reserved.</p>
       </div>
     </footer>

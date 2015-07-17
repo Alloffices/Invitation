@@ -8,6 +8,6 @@ class LeadMailer < ApplicationMailer
   def signup_confirmation(lead)
     @lead = lead
 
-    mail to: "alloffices.nyc@gmail.com"
+    mail to: "nobbble1@gmail.com"
   end
 end

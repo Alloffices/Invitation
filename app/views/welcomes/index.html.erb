@@ -2,10 +2,13 @@
 
       <div class="hero">
 
-            <h1>Nobbble</h1>        
-            <h3>Pursue Your Passions.</h3>
+            <h1>Nobbble</h1>
+            <h3>Request a free invite to try our beta now!</h3>
 <br />
-
+              <%= if cookies[:saved_lead] %>
+                <h1>Nobbble</h1>
+                <h3>Thanks! You're on the waiting list.</h3>
+              <% else %>
                 <%= form_for @lead do |f| %>
 
                   <%= f.text_field :name, type: 'name',placeholder: 'Name', class: 'form-control' %><br>
@@ -14,8 +17,10 @@
 
                   <%= f.text_field :name, type: 'name',placeholder: 'Social Link', class: 'form-control' %><br>
 
-                  <%= f.submit value: 'Submit', class: "btn btn-primary btn-lg" %>
+                  <%= f.submit value: 'Join The Beta', class: "btn btn-primary btn-lg" %>
                 <% end %>
+              <% end %>
+
 
       </div>
   

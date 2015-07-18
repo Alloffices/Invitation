@@ -3,12 +3,11 @@
       <div class="hero">
 
             <h1>Nobbble</h1>
-            <h3>Request a free invite to try our beta now!</h3>
 <br />
               <% if cookies[:saved_lead] %>
-                <h1>Nobbble</h1>
                 <h3>Thanks! You're on the waiting list.</h3>
               <% else %>
+                <h3>Request a free invite to try our beta now!</h3>
                 <%= form_for @lead do |f| %>
 
                   <%= f.text_field :name, type: 'name',placeholder: 'Name', class: 'form-control' %><br>
@@ -44,26 +43,6 @@
         <div class="container">
             <!--/.row-->
     <!--/.footer-->
-
-<!-- Social Footer, Single Coloured -->
-<!-- Include Font Awesome Stylesheet in Header -->
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-<!-- // -->
-<div class="container">
-<br />
-        <div class="text-center center-block">
-            <p class="txt-railway">- Social Media -</p>
-            <br />
-                <a href="https://www.facebook.com/bootsnipp"><i id="social" class="fa fa-facebook-square fa-3x"></i></a>
-                <a href="https://twitter.com/bootsnipp"><i id="social" class="fa fa-twitter-square fa-3x"></i></a>
-                <a href="https://plus.google.com/+Bootsnipp-page"><i id="social" class="fa fa-google-plus-square fa-3x"></i></a>
-                <a href="mailto:bootsnipp@gmail.com"><i id="social" class="fa fa-envelope-square fa-3x"></i></a>
-</div>
-</div>
-
-        </div>
-        <!--/.container--> 
-    </div>
 
     
     <div class="footer-bottom">
